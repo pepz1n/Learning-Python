@@ -26,3 +26,4 @@ lugares = [
 pessoasDefinitivo = f"{random.choice(pessoas)} e {random.choice(pessoas)}"
 
 print(f"{pessoasDefinitivo} vao pagar a/o {random.choice(bebidas)} na {random.choice(lugares)}")
+
