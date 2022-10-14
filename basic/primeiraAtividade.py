@@ -1,5 +1,6 @@
 import os
 
+os.system("clear")
 value = float((input("Quanto a janta custou? ")).replace("R$", ''))
 tip = int(input("Qual a gorjeta?\n1- 15%;\n2- 18%;\n3- 20%.\n"))
 gorjeta = 0
