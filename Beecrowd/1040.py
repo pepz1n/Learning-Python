@@ -1,6 +1,6 @@
 import math
 
-[nota1, nota2, nota3, nota4] =list(map(float,input().split(" ")))
+[nota1, nota2, nota3, nota4] = list(map(float,input().split(" ")))
 
 media = (nota1*0.2) + (nota2*0.3) + (nota3*0.4) + (nota4*0.1)
 media = math.floor(media*100)/100
