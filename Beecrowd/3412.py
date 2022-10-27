@@ -13,3 +13,4 @@ for i in range(a):
     print(f"{aluno}: {(total/3):.2}")
   else:
     print(f"{aluno}: {(total/2):.2}")
+  

@@ -1,6 +1,7 @@
 [pilotos, voltas] = list(map(int,input().split(" ")))
 
 pilotoRapido = 0
+tempos = []
 posicaoI = 0
 total = 0
 voltaMaisRapida = 9999999
@@ -22,8 +23,16 @@ for i in range(1, pilotos+1):
         voltaMaisRapida = j
         posicaoI = i
         total = todasVolta
-      
-      
+  tempos.append({
+    'piloto': pilotoAtual,
+    'volta': todasVolta
+  })
+  
+  tempos.sort(reverse=False ,key=lambda a: a['volta'])
 
+contado = 0
 
-print(pilotoRapido if i <=10 else "NENHUM")
+for k in tempos:
+  contado += 1
+  if (k['piloto'] == pilotoRapido):
+    print(pilotoRapido if contado <= 10 else "NENHUM") 
