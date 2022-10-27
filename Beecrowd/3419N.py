@@ -4,7 +4,7 @@ pilotoRapido = 0
 tempos = []
 posicaoI = 0
 total = 0
-voltaMaisRapida = 9999999
+voltaMaisRapida = 10
 for i in range(1, pilotos+1):
   corredor = list(map(lambda a: int(a.replace(":", "")) ,input().split(" ")))
   pilotoAtual = corredor[0]
